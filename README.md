@@ -1,1 +1,1 @@
-# lxtest
+# Prepare task for trainee 
