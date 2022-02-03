@@ -5,43 +5,31 @@
 
 ### 1.1 Prepare .tf file for create AWS EC2 instances and install docker engine via Terraform
 
-![infra.tf]()
+![infra.tf](https://github.com/o4edik/lxtest/blob/main/infra.tf)
 
 ### 1.2 Create plain html page
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lxtest html file</title>
-    <h2>Good day for exam ! </h2>
-</head>
-<body>
-    
-</body>
-</html>
-```
+
+![html](https://github.com/o4edik/lxtest/blob/main/www/index.html)
+
 ### 1.3 Create custom nginx docker image with own html page from official nginx dockerimage.
 
-![dockerfile]()
+![dockerfile](https://github.com/o4edik/lxtest/blob/main/www/dockerfile)
 
 ### 1.4 Create ansible.cfg
 
-![ansible.cfg]()
+![ansible.cfg](https://github.com/o4edik/lxtest/blob/main/ansible.cfg)
 
 ### 1.5 Create inventory file for Ansible for managed EC2 nodes
 
-![(anshosts.txt])
+![anshosts.txt](https://github.com/o4edik/lxtest/blob/main/anshosts.txt)
 
 ### 1.6 Create Ansible playbook file for running custom dockerimage on AWC EC2 instances
 
-![runimage.yml]
+![runimage.yml](https://github.com/o4edik/lxtest/blob/main/runimage.yml)
 
 ### 1.7 Create bash script for running full task
 
-![tarcopyrun.sh]()
+![tarcopyrun.sh](https://github.com/o4edik/lxtest/blob/main/tarcopyrun.sh)
 
 
 ##  2.Exec
