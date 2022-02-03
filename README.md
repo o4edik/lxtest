@@ -1,5 +1,6 @@
 
-# Task for trainee
+# Task for trainee: 
+  Create infrastructure with Terrafom on AWS, create custom nginx dockerimage, deploy dockerimage on AWS using Ansible. Webpages shoud be reachable from internet.
 
 ##  1. Preparation
 
