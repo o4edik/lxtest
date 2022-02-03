@@ -35,8 +35,9 @@
 ##  2.Exec
 
 ### 2.1 Run infra.tf for creating AWS EC2 instances and install docker engine via Terraform
-### 2.2 Take public IP's and put in to inventory file anshosts.txt respectively
-### 2.3 Put in public IP's in to runimage.yml, url: respectively 
-### 2.4 Run tarcopyrun.sh file 
-### 2.5 Check webpages availibility in web browser using both public IP's from Terraform output
+### 2.2 Take public IP's and put in to inventory file "anshosts.txt" respectively
+### 2.3 Put in public IP's in to "runimage.yml, url:" respectively 
+### 2.4 Put in public IP's in to "tarcopyrun.sh" respectively
+### 2.5 Run tarcopyrun.sh file 
+### 2.6 Check webpages availibility in web browser using both public IP's from Terraform output
  
