@@ -1,0 +1,23 @@
+---
+- name: Load image and run container
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: Load image from tar archiv
+    command: docker load --input nginx.tar
+
+  - name: run container from image
+    command: docker run -d -p 80:80 nginx:newconf
+
+  - name: check addrress webserver1
+    uri:
+      url: http://18.223.123.163
+      return_content: yes
+    
+  - name: check addrress webserver2
+    uri:
+      url: http://3.144.73.232
+      return_content: yes
+
+...

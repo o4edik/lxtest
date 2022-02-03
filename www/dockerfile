@@ -1,0 +1,15 @@
+FROM alpine
+LABEL maintainer="ediko4@hotmail.com"
+RUN apk update
+RUN apk add nano
+RUN apk add nginx && apk upgrade
+RUN mkdir -p /run/nginx
+RUN touch /run/nginx/nginx.pid
+RUN adduser -D -g 'www' www
+RUN mkdir /www && chown -R www:www /var/lib/nginx && chown -R www:www /www
+RUN mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.orig
+COPY /index.html /www
+COPY /nginx.conf /etc/nginx
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
+
